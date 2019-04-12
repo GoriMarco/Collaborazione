@@ -1,0 +1,39 @@
+#define led1 13
+
+#define led2 12
+
+#define switch1 8
+
+#define switch2 7
+
+void setup() {
+  
+Serial.begin(9600);
+  
+pinMode(led1,OUTPUT);
+  
+pinMode(led2,OUTPUT);
+  
+pinMode(switch1,INPUT);
+  
+pinMode(switch2,INPUT);
+
+
+}
+
+
+void loop() {
+  
+int I1 = digitalRead(switch1);
+  
+int I2 = digitalRead(switch2);  
+  
+Serial.print("I1 = ");
+  
+Serial.print(I1);
+  
+Serial.print(" I2 = "); 
+  
+Serial.println(I2);
+
+}
